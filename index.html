@@ -1,11 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        /* this for calling all element in html */
+        * {
+            margin: 0;
+            padding: 0;
+            overflow-y: hidden;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-color: #c6c6c6;
+            height: 100vh;
+            padding: 12rem;
+            overflow-x: hidden;
+        }
+
+        .items {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 50%;
+            border-radius: 20px 0 20px 20px;
+        }
+
+        .title {
+            color: rgb(13, 243, 13);
+            text-transform: capitalize;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .parag {
+            font-weight: 600;
+            text-align: center;
+            padding: 0 0 20px;
+        }
+        .item-one {
+            padding: 0 15px 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <div class="items">
+            <h1 class="title">geeksforgeeks</h1>
+            <p class="parag">enter your login credentials</p>
+
+            <div class="item-one">
+                <label>username:</label><br><br>
+                <input type="text" placeholder="username" /><br><br>
+
+                <label>password:</label><br><br>
+                <input type="password" placeholder="enter your password" /><br><br>
+
+                <button>send</button>
+            </div>
+            <div class="item">
+                <p>not registered?</p>
+                <a href="#">create an account</a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
